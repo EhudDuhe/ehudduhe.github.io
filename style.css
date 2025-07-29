@@ -1,0 +1,214 @@
+:root{
+--violet-doux: #6C63FF;
+--violet-fonce:#534EDD;
+--orange-vif:#FFA726;
+--gris-tres-fonce:#333;
+--gris-fonce:#666;
+--gris-tres-claire:#F8F8F8;
+--gris-clair:#EEE;
+}
+
+*{
+    margin: 0; /*margin: signifie marge exterieure*/
+    padding: 0;/*padding: est la marge interieur*/
+    box-sizing: border-box;/*cadre*/
+}
+body{
+    background-color: var(--gris-tres-claire);
+    font-family: Roboto,sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 4rem; /*il ajoute une marge interne*/
+
+}
+.logo{
+    text-decoration: none;/*enleve le soulignement*/
+    font-size: 2.5rem;/*taille de la police*/
+    color: var(--violet-doux);
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    margin-left: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:var(--gris-tres-fonce);
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover{
+    color:var(--violet-fonce);/*il colorie texte sur lequel la souris pointe*/
+}
+ul li a::after{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height: 2px;
+    background-color: var(--violet-doux);
+    transition: width 0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+ul li a.active{
+    color: var(--violet-doux);
+}
+ul li a.active::after {
+width:100%;
+}
+.hero-section {
+    display: flex;
+    justify-content: center; /*centre le contenues */
+    align-items: center ;
+    gap : 5rem ; /*espace entre les sous elements de la section */
+    text-align: center ; /*alligne en centre le contenus */
+    margin: 10rem 8rem ;
+}
+
+.hero-section img {
+    width : 300px ; /*Largeur de l'image */
+    height : 300px ; /*hauteur de l'image */
+    object-fit: fill ;
+    border-radius: 50%; /*arrondis les bordures */ 
+    border :8px solid var(--violet-doux) ;
+}
+
+.hero-section h1{
+    font-size : 4rem ;
+    margin-bottom : 1.2rem ;
+    font-weight: Bold ;
+    color: var(--violet-doux);
+}
+
+.hero-section p{
+    font-size: 1.2rem ;
+    color : var(--gris-fonce);
+    margin-bottom : 1.2rem ;
+}
+
+.hero-section a {
+    text-decoration: none ; /*enelve le soullignement */
+    display: inline-block ;
+    background-color: var(--violet-doux);
+    color: white ;
+    padding : 15px 30px ;
+    border-radius: 50px ;
+    font-weight: 700 ;
+    text-transform: uppercase ;
+    letter-spacing: 1px ;
+    transition: background-color 0.3 s ease , transform 0.2 s ease;
+    margin-top: 1rem ;
+}
+
+.hero-section a:hover {
+    background-color: var(--violet-fonce) ;
+    transform: translateY(-3px) ; /*translateX : part dans les cotes , translateY : part vers le haut ou vers le bas */
+}
+
+.apropos-section {
+    text-align: center ;
+    width : 800px ;
+    margin: 6rem auto ;
+}
+
+section h2 {
+    font-size: 2.5rem ;
+    font-weight: 700 ;
+    color: var(--violet-doux);
+    position: relative ;
+    text-align: center;
+}
+
+section h2::after {
+    content: '' ;
+    display: block ;
+    width : 60px ;
+    height: 4px ;
+    background-color: var(--violet-doux);
+    margin : 1rem auto ;
+    border-radius : 2px ;
+}
+
+.apropos-section p {
+    line-height: 1.6 ;
+    font-size: 1.1em ;
+    color : var(--gris-fonce) ;
+    margin-bottom: 2rem ; /*espace entre le paragraphe */
+}
+.competences-section {
+    margin-top: 3rem;
+}
+.competences-section table {
+    width: 80%;
+    margin: 0 auto;
+    background-color:  #FFF;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;;
+}
+.competences-section th,
+.competences-section td {
+    padding: 15px;
+    
+}
+.competences-section thead tr {
+    background-color: var(--violet-doux);
+    color: white;
+}
+.competences-section td {
+    border-bottom: 1px solid var(--gris-clair);
+   
+}
+.competences-section tbody tr:nth-last-child(even){
+    background-color: #FDFDFD; /*change la couleur de fond des lignes paires */
+}
+.competences-section tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease; /*transition pour l'effet de survol */
+}
+.competences-section tbody tr:hover{
+    background-color: var(--gris-tres-claire); /*change la couleur de fond des lignes survolées */
+    transform: translateY(-3px); /*effet de translation vers le haut */
+} 
+footer {
+    background-color: var(--violet-fonce);
+    color: #FFF;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    }
+footer a {
+    font-size: 1.8rem;
+    color: #FFF;
+    margin: 0 10px;
+    transition: color 0,3 ease, transform 0.2s ease;
+}
+
+footer a:hover {
+    display: inline-block;
+    color: --var(--orange-vif);
+    transform: translateY(-3px);
+    
+
+}
