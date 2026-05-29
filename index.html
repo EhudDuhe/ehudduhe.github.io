@@ -1,102 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RMZ9G0T3C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RMZ9G0T3C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0RMZ9G0T3C');
+    </script>
 
-  gtag('config', 'G-0RMZ9G0T3C');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <meta name="description"
+        content="Portfolio d'Ehud Kayumba, Ingénieur Logiciel orienté Architecture & Impact Communautaire.">
+    <title>Ehud Kayumba — Ingénieur Logiciel</title>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
 </head>
+
 <body>
-      <header>
-          <div>
-             <a href="index.html"class="logo">Mon portfolio</a>
-          </div>
-          <nav>
-            <ul>
-                <li><a href="index.html"class="active">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                
-            </ul>
-          </nav>
-      </header>
-      <main>
-        <section class ="hero-section">
-            <div >
-                <h1>Salut, je m'appelle Ehud</h1>
-                <p>Etudiant en sciences informatique .</p>
-                <a href="projets.html"> Voir mes projets </a>
+
+    <!-- Contrôle bilingue CSS sans JavaScript -->
+    <input type="checkbox" id="lang-toggle" class="lang-toggle-input">
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="header-logo">Ehud KAYUMBA</a>
+            <div class="header-right">
+                <nav class="header-nav">
+                    <a href="#philosophy" class="nav-link lang-fr">01. Philosophie</a>
+                    <a href="#philosophy" class="nav-link lang-en">01. Philosophy</a>
+                    <a href="#connections" class="nav-link lang-fr">02. Connexions</a>
+                    <a href="#connections" class="nav-link lang-en">02. Beyond code</a>
+                </nav>
+                <label for="lang-toggle" class="lang-switch" aria-label="Changer de langue / Switch language">
+                    <span class="lang-label fr-label">FR</span>
+                    <span class="lang-slider"></span>
+                    <span class="lang-label en-label">EN</span>
+                </label>
             </div>
-            <div>
-                <img src="ma-photo.jpg" alt="c'est une image">
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Section 1 : L'Héro -->
+        <section class="section hero-section">
+            <div class="hero-grid">
+                <div class="hero-image-container">
+                    <img src="ma-photo.jpg" alt="Ehud Kayumba" class="hero-image">
+                </div>
+                <div class="hero-text-container">
+                    <h1 class="hero-title lang-fr">Ingénieur Logiciel orienté Architecture &amp; Impact Communautaire.</h1>
+                    <h1 class="hero-title lang-en">Software Engineer focused on Architecture &amp; Community Impact.</h1>
+                    
+                    <p class="hero-description lang-fr">
+                        À l'ère de l'intelligence artificielle, la syntaxe est volatile, mais l'architecture reste
+                        capitale. Je ne me définis pas par un langage, mais par ma capacité à concevoir des solutions
+                        logicielles robustes, abordables et adaptées aux contraintes réelles de ma communauté.
+                    </p>
+                    <p class="hero-description lang-en">
+                        In the age of artificial intelligence, syntax is volatile, but architecture remains capital.
+                        I do not define myself by a language, but by my ability to design robust, affordable software
+                        solutions tailored to the real constraints of my community.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class ="apropos-section">
-            <h2> A Propos de Moi </h2>
-            <p>
-                 🎓Étudiant en sciences Informatique
-Passionné par les technologies numériques, je poursuis actuellement une licence en informatique avec un intérêt particulier pour le développement logiciel, la programmation et les systèmes. Curieux, toujours en quête d'apprentissage, je m’investis dans des projets académiques et personnels afin de renforcer mes compétences techniques et théoriques.
-            <p>
-                 💡Mon objectif : contribuer à des solutions innovantes et concrètes, tout en évoluant dans un environnement stimulant.
+        <!-- Section 2 : Philosophie -->
+        <section id="philosophy" class="section philosophy-section">
+            <h2 class="section-title lang-fr">01. Philosophie d'Ingénierie</h2>
+            <h2 class="section-title lang-en">01. Engineering Philosophy</h2>
 
-
-            </p>
-        </section>
-        <section class="competences-section">
-            <h2>Mes competences</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>CATEGORIES</th>
-                        <th>COMPETENCES</th>
-                        <th>NIVEAU</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                        <td> programmation</td>
-                        <td> HTML,CSS,JavaScript, Python</td>
-                        <td>Avance</td>
-                    </tr>
-                    <tr>
-                        <td>Design</td>
-                        <td>Figma </td>
-                        <td>Intermediaire</td>
-                    </tr>
-                    <tr>
-                        <td>Soft Skills</td>
-                        <td>Communication, Resolution de Probleme,Automation</td>
-                        <td>Expert</td>
-                    </tr>
-                </tbody>
+            <div class="philosophy-grid">
+                <!-- Bloc 1 -->
+                <div class="philosophy-card">
+                    <h3 class="card-title lang-fr">L'Architecture d'abord</h3>
+                    <h3 class="card-title lang-en">Architecture First</h3>
+                    
+                    <p class="card-text lang-fr">
+                        Je passe du temps sur la spécification, la modélisation et la structure. Bien piloter les outils
+                        modernes demande une vision architecturale claire pour garantir la scalabilité et
+                        l'optimisation.
+                    </p>
+                    <p class="card-text lang-en">
+                        I spend time on specification, modeling, and structure. Steering modern tools effectively
+                        requires a clear architectural vision to ensure scalability and optimization.
+                    </p>
+                </div>
                 
+                <!-- Bloc 2 -->
+                <div class="philosophy-card">
+                    <h3 class="card-title lang-fr">Agnostique Technologique</h3>
+                    <h3 class="card-title lang-en">Tech Agnostic</h3>
+                    
+                    <p class="card-text lang-fr">
+                        Python, Django, Kotlin, PostgreSQL ou C/C++.... Je choisis et
+                        maîtrise la stack qui répond précisément aux contraintes de performance et de coût du projet.
+                    </p>
+                    <p class="card-text lang-en">
+                        Python, Django, Kotlin, PostgreSQL, or C/C++... I choose and
+                        master the stack that precisely answers the performance and cost constraints of the project.
+                    </p>
+                </div>
+                
+                <!-- Bloc 3 -->
+                <div class="philosophy-card">
+                    <h3 class="card-title lang-fr">Impact Communautaire</h3>
+                    <h3 class="card-title lang-en">Community Impact</h3>
+                    
+                    <p class="card-text lang-fr">
+                        Mon objectif principal est de concevoir des logiciels accessibles, optimisés et pensés pour
+                        résoudre des défis concrets au sein de la communauté.
+                    </p>
+                    <p class="card-text lang-en">
+                        My primary goal is to design accessible, optimized software designed to solve concrete
+                        challenges within the community.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            </table>
+        <!-- Section 3 : Connexions -->
+        <section id="connections" class="section connections-section">
+            <h2 class="section-title lang-fr">02. Au-delà du code</h2>
+            <h2 class="section-title lang-en">02. Beyond code</h2>
 
+            <div class="connections-container">
+                <p class="connections-intro lang-fr">
+                    Pour suivre mes contributions publiques, analyser mes choix d'architecture ou initier un échange
+                    autour d'un projet communautaire, retrouvez-moi sur mes différents espaces :
+                </p>
+                <p class="connections-intro lang-en">
+                    To follow my public contributions, analyze my architectural choices, or initiate an exchange
+                    around a community project, find me on my different spaces:
+                </p>
+
+                <div class="connections-list">
+                    <!-- GitHub -->
+                    <a href="https://github.com/EhudDuhe" target="_blank" rel="noopener noreferrer"
+                        class="connection-link">
+                        <div class="connection-info">
+                            <span class="connection-name">GitHub</span>
+                            <span class="connection-desc lang-fr">Découvrez mes architectures et futurs projets publics</span>
+                            <span class="connection-desc lang-en">Discover my architectures and future public projects</span>
+                        </div>
+                        <span class="connection-arrow">↗</span>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/ehud-kayumba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"
+                        class="connection-link">
+                        <div class="connection-info">
+                            <span class="connection-name">LinkedIn</span>
+                            <span class="connection-desc lang-fr">Parcours et échanges professionnels</span>
+                            <span class="connection-desc lang-en">Career and professional exchanges</span>
+                        </div>
+                        <span class="connection-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Ehud KAYUMBA. Tous droits réservés.</p>
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/ehud-kayumba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><i class="fab fa-linkedin social-icon"></i></a>
-        
-        <a href="https://github.com/ehudduhe" target="_blank" ><i class="fab fa-github social-icon"></i></a>
-        
-        <a href="https://wa.me/243817994095" target="_blank" ><i class="fab fa-whatsapp social-icon"></i></a>
-    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright lang-fr">&copy; 2026 Ehud KAYUMBA. Tous droits réservés.</p>
+            <p class="footer-copyright lang-en">&copy; 2026 Ehud KAYUMBA. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
