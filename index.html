@@ -14,14 +14,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio d'Ehud Kayumba, Ingénieur Logiciel orienté Architecture & Impact Communautaire.">
-    <title>Ehud Kayumba — Ingénieur Logiciel</title>
+        content="Portfolio d'Ehud Kayumba — Ingénieur Logiciel &amp; Analyste de Données. Architecture logicielle, ingénierie de données, télémétrie et aide à la décision.">
+    <title>Ehud Kayumba — Ingénieur Logiciel &amp; Analyste de Données</title>
+
+    <!-- OpenGraph / Partage Réseaux Sociaux (LinkedIn, WhatsApp, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ehudduhe.github.io/">
+    <meta property="og:title" content="Ehud Kayumba — Ingénieur Logiciel &amp; Analyste de Données">
+    <meta property="og:description"
+        content="Architecture logicielle, ingénierie de données, télémétrie et aide à la décision.">
+    <meta property="og:image" content="https://ehudduhe.github.io/ma-photo.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ehud Kayumba — Ingénieur Logiciel &amp; Analyste de Données">
+    <meta name="twitter:description"
+        content="Architecture logicielle, ingénierie de données, télémétrie et aide à la décision.">
+    <meta name="twitter:image" content="https://ehudduhe.github.io/ma-photo.jpg">
 
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -37,8 +51,10 @@
                 <nav class="header-nav">
                     <a href="#philosophy" class="nav-link lang-fr">01. Philosophie</a>
                     <a href="#philosophy" class="nav-link lang-en">01. Philosophy</a>
-                    <a href="#connections" class="nav-link lang-fr">02. Connexions</a>
-                    <a href="#connections" class="nav-link lang-en">02. Beyond code</a>
+                    <a href="#expertise" class="nav-link lang-fr">02. Expertise</a>
+                    <a href="#expertise" class="nav-link lang-en">02. Expertise</a>
+                    <a href="#connections" class="nav-link lang-fr">03. Connexions</a>
+                    <a href="#connections" class="nav-link lang-en">03. Beyond code</a>
                 </nav>
                 <label for="lang-toggle" class="lang-switch" aria-label="Changer de langue / Switch language">
                     <span class="lang-label fr-label">FR</span>
@@ -57,18 +73,20 @@
                     <img src="ma-photo.jpg" alt="Ehud Kayumba" class="hero-image">
                 </div>
                 <div class="hero-text-container">
-                    <h1 class="hero-title lang-fr">Ingénieur Logiciel orienté Architecture &amp; Impact Communautaire.</h1>
-                    <h1 class="hero-title lang-en">Software Engineer focused on Architecture &amp; Community Impact.</h1>
+                    <h1 class="hero-title lang-fr">Ingénieur Logiciel &amp; Analyste de Données — Architecture, Mesure &amp; Aide à la Décision.</h1>
+                    <h1 class="hero-title lang-en">Software Engineer &amp; Data Analyst — Architecture, Telemetry &amp; Decision Support.</h1>
                     
                     <p class="hero-description lang-fr">
                         À l'ère de l'intelligence artificielle, la syntaxe est volatile, mais l'architecture reste
-                        capitale. Je ne me définis pas par un langage, mais par ma capacité à concevoir des solutions
-                        logicielles robustes, abordables et adaptées aux contraintes réelles de ma communauté.
+                        capitale. Je ne me définis pas par un langage, mais par ma capacité à concevoir des
+                        architectures logicielles robustes et des systèmes d'analyse de données capables de transformer
+                        des flux complexes en indicateurs clairs et exploitables.
                     </p>
                     <p class="hero-description lang-en">
                         In the age of artificial intelligence, syntax is volatile, but architecture remains capital.
-                        I do not define myself by a language, but by my ability to design robust, affordable software
-                        solutions tailored to the real constraints of my community.
+                        I do not define myself by a language, but by my ability to design robust software architectures
+                        and data analysis systems capable of transforming complex streams into clear, actionable
+                        indicators.
                     </p>
                 </div>
             </div>
@@ -102,45 +120,121 @@
                     <h3 class="card-title lang-en">Tech Agnostic</h3>
                     
                     <p class="card-text lang-fr">
-                        Python, Django, Kotlin, PostgreSQL ou C/C++.... Je choisis et
-                        maîtrise la stack qui répond précisément aux contraintes de performance et de coût du projet.
+                        Python, SQL, PostgreSQL, Django, Kotlin ou C/C++... Je mobilise les outils logiciels et
+                        analytiques qui répondent précisément aux contraintes de performance, de volume et de coût du
+                        projet.
                     </p>
                     <p class="card-text lang-en">
-                        Python, Django, Kotlin, PostgreSQL, or C/C++... I choose and
-                        master the stack that precisely answers the performance and cost constraints of the project.
+                        Python, SQL, PostgreSQL, Django, Kotlin, or C/C++... I leverage the software and analytical
+                        tools that precisely meet the performance, volume, and cost constraints of the project.
                     </p>
                 </div>
                 
                 <!-- Bloc 3 -->
                 <div class="philosophy-card">
-                    <h3 class="card-title lang-fr">Impact Communautaire</h3>
-                    <h3 class="card-title lang-en">Community Impact</h3>
+                    <h3 class="card-title lang-fr">Mesure &amp; Prise de Décision</h3>
+                    <h3 class="card-title lang-en">Measurement &amp; Decision-Making</h3>
                     
                     <p class="card-text lang-fr">
-                        Mon objectif principal est de concevoir des logiciels accessibles, optimisés et pensés pour
-                        résoudre des défis concrets au sein de la communauté.
+                        Un logiciel ne doit pas seulement fonctionner : il doit éclairer. J'intègre la collecte,
+                        l'apurement de données et la télémétrie pour fournir des études et des indicateurs fiables
+                        adaptés aux réalités du terrain.
                     </p>
                     <p class="card-text lang-en">
-                        My primary goal is to design accessible, optimized software designed to solve concrete
-                        challenges within the community.
+                        Software should not just run: it should illuminate. I integrate data collection, cleaning,
+                        and telemetry to deliver reliable studies and indicators tailored to real-world constraints.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3 : Connexions -->
+        <!-- Section 3 : Domaines d'Intervention -->
+        <section id="expertise" class="section expertise-section">
+            <h2 class="section-title lang-fr">02. Domaines d'Intervention</h2>
+            <h2 class="section-title lang-en">02. Areas of Expertise</h2>
+
+            <div class="expertise-grid">
+                <!-- Capacité 1 -->
+                <div class="expertise-card">
+                    <div class="expertise-top">
+                        <span class="expertise-index">02.1</span>
+                        <h3 class="card-title lang-fr">Systèmes &amp; Architectures Logicielles</h3>
+                        <h3 class="card-title lang-en">Software Systems &amp; Architectures</h3>
+
+                        <p class="card-text lang-fr">
+                            Développement d'applications web/mobiles et backends résilients, conçus pour fonctionner
+                            efficacement même dans des environnements contraints.
+                        </p>
+                        <p class="card-text lang-en">
+                            Development of resilient web/mobile applications and backends, designed to operate efficiently
+                            even in constrained environments.
+                        </p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-tags lang-fr">Backend · Web &amp; Mobile · Résilience</span>
+                        <span class="expertise-tags lang-en">Backend · Web &amp; Mobile · Resilience</span>
+                    </div>
+                </div>
+
+                <!-- Capacité 2 -->
+                <div class="expertise-card">
+                    <div class="expertise-top">
+                        <span class="expertise-index">02.2</span>
+                        <h3 class="card-title lang-fr">Ingénierie &amp; Analyse de Données</h3>
+                        <h3 class="card-title lang-en">Data Engineering &amp; Analytics</h3>
+
+                        <p class="card-text lang-fr">
+                            Structuration de bases de données, pipelines d'apurement automatisés (méthodes statistiques,
+                            Python/SQL) et transformation de fichiers dispersés en sources de vérité uniques.
+                        </p>
+                        <p class="card-text lang-en">
+                            Database structuring, automated data cleaning pipelines (statistical methods, Python/SQL), and
+                            transformation of scattered files into single sources of truth.
+                        </p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-tags lang-fr">Python · SQL · Pipelines &amp; Apurement</span>
+                        <span class="expertise-tags lang-en">Python · SQL · Pipelines &amp; Cleaning</span>
+                    </div>
+                </div>
+
+                <!-- Capacité 3 -->
+                <div class="expertise-card">
+                    <div class="expertise-top">
+                        <span class="expertise-index">02.3</span>
+                        <h3 class="card-title lang-fr">Télémétrie &amp; Études Sectorielles</h3>
+                        <h3 class="card-title lang-en">Telemetry &amp; Sector Studies</h3>
+
+                        <p class="card-text lang-fr">
+                            Instrumentation de plateformes numériques, mesure d'audience/usage et croisement de données
+                            multi-sources pour produire des rapports d'aide à la décision.
+                        </p>
+                        <p class="card-text lang-en">
+                            Digital platform instrumentation, audience/usage measurement, and multi-source data
+                            cross-referencing to produce decision-support reports.
+                        </p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-tags lang-fr">Télémétrie · Indicateurs · Aide à la décision</span>
+                        <span class="expertise-tags lang-en">Telemetry · Indicators · Decision Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 : Connexions -->
         <section id="connections" class="section connections-section">
-            <h2 class="section-title lang-fr">02. Au-delà du code</h2>
-            <h2 class="section-title lang-en">02. Beyond code</h2>
+            <h2 class="section-title lang-fr">03. Au-delà du code</h2>
+            <h2 class="section-title lang-en">03. Beyond code</h2>
 
             <div class="connections-container">
                 <p class="connections-intro lang-fr">
                     Pour suivre mes contributions publiques, analyser mes choix d'architecture ou initier un échange
-                    autour d'un projet communautaire, retrouvez-moi sur mes différents espaces :
+                    autour d'un projet logiciel ou analytique, retrouvez-moi sur mes différents espaces :
                 </p>
                 <p class="connections-intro lang-en">
                     To follow my public contributions, analyze my architectural choices, or initiate an exchange
-                    around a community project, find me on my different spaces:
+                    around a software or data project, find me on my different spaces:
                 </p>
 
                 <div class="connections-list">
@@ -156,7 +250,7 @@
                     </a>
                     
                     <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/ehud-kayumba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.linkedin.com/in/ehud-kayumba/" target="_blank" rel="noopener noreferrer"
                         class="connection-link">
                         <div class="connection-info">
                             <span class="connection-name">LinkedIn</span>

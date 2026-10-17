@@ -31,6 +31,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
     background-color: var(--bg);
 }
 
@@ -371,7 +372,64 @@ span.lang-fr {
 }
 
 /* ==========================================================================
-   SECTION 3 : CONNEXIONS
+   SECTION 3 : DOMAINES D'INTERVENTION (EXPERTISE)
+   ========================================================================== */
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.expertise-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2.25rem;
+    background-color: #131316;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.expertise-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.expertise-index {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+}
+
+.expertise-footer {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.expertise-tags {
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+}
+
+.expertise-card:hover {
+    border-color: var(--border-hover);
+    background-color: #16161a;
+    transform: translateY(-4px);
+}
+
+.expertise-card:hover .expertise-index,
+.expertise-card:hover .expertise-tags {
+    color: var(--text-primary);
+}
+
+/* ==========================================================================
+   SECTION 4 : CONNEXIONS
    ========================================================================== */
 
 .connections-container {
@@ -486,9 +544,14 @@ span.lang-fr {
         font-size: 2rem;
     }
     
-    .philosophy-grid {
+    .philosophy-grid,
+    .expertise-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+    
+    .expertise-grid {
+        gap: 1.5rem;
     }
     
     /* Annulation de l'effet focus global sur mobile pour un meilleur confort tactile */
@@ -496,7 +559,8 @@ span.lang-fr {
         opacity: 1;
     }
     
-    .philosophy-grid .philosophy-card:hover {
+    .philosophy-grid .philosophy-card:hover,
+    .expertise-card:hover {
         transform: none;
     }
 }
@@ -527,15 +591,17 @@ span.lang-fr {
     
     .header-right {
         flex-direction: row;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: 0.75rem;
     }
     
     .header-nav {
-        gap: 1.25rem;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
     
     .nav-link {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
     }
     
     .main-content {
